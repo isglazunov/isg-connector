@@ -1,6 +1,6 @@
 {
     "name": "isg-connector",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "keywords": ["amd", "require", "crossplatform", "window", "script"],
     "devDependencies": {
         "should": "2.0.2",

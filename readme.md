@@ -1,4 +1,4 @@
-# isg-connector@0.0.1
+# isg-connector@0.0.2
 Code of universal connection module for JavaScript.
 
 ## Install
@@ -12,8 +12,8 @@ Code of universal connection module for JavaScript.
 ### Code
 Use this code to your module:
 ```js
-(function(b,c,constructor,d,e){constructor.version=c;if(typeof(window)!=='undefined'){var f=[];for(var g in e){f.push(window[e[g]])}this[b]=constructor.apply(null,f)}if(typeof(define)!=='undefined'&&define.amd){var f=['module'];for(var g in d){f.push(d[g])}define(f,function(a){a.exports=constructor.apply(null,[].slice.call(arguments,1))})}if(typeof(module)!=='undefined'&&module.exports&&typeof(require)=='function'){var f=[];for(var g in d){f.push(require(d[g]))}module.exports=constructor.apply(null,f)}return constructor})(
-    'MyModule', '0.0.0', function(_){
+(function(b,constructor,c,d){if(typeof(window)!=='undefined'){var e=[];for(var f in d){e.push(window[d[f]])}this[b]=constructor.apply(null,e)}if(typeof(define)!=='undefined'&&define.amd){var e=['module'];for(var f in c){e.push(c[f])}define(e,function(a){a.exports=constructor.apply(null,[].slice.call(arguments,1))})}if(typeof(module)!=='undefined'&&module.exports&&typeof(require)=='function'){var e=[];for(var f in c){e.push(require(c[f]))}module.exports=constructor.apply(null,e)}return constructor})(
+    'MyModule', function(_){
         return {
             method: function(){
                 console.log('myModule connected');
@@ -61,6 +61,9 @@ MyModule.method()
 ```
 
 ## Versions
+
+### 0.0.2
+Removed the variable version.
 
 ### 0.0.1
 The basic functionality.
