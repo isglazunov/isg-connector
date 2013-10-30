@@ -1,0 +1,10 @@
+{
+    "name": "isg-connector",
+    "version": "0.0.1",
+    "keywords": ["amd", "require", "crossplatform", "window", "script"],
+    "devDependencies": {
+        "should": "2.0.2",
+        "mocha": "1.13.0",
+        "lodash": "2.2.1"
+    }
+}
